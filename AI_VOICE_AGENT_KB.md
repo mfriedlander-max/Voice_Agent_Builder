@@ -392,6 +392,7 @@ Example: `"Say Hello to {{customer_name}}"`
 | Lead Qualification School Fun | retell-llm | `agent_64d953749523b03e571341344c` | Single prompt agent |
 | Landscaping Receptionist - Test | retell-llm | `agent_89fb9ef38e0c32af71c9908e63` | Test agent, can delete |
 | Landscaping Receptionist Demo | conversation-flow | `agent_a7d74c454f6778f3b36369b438` | First API-created conversation flow, demo |
+| GreenScape Landscaping Agent | conversation-flow | `agent_7bfd12a1dea7f5faca1820e180` | Full agent: lead qual, vendor rejection, GCal scheduling (placeholder URLs), 28 nodes |
 
 ---
 
