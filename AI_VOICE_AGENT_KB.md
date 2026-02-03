@@ -4,6 +4,184 @@
 
 ---
 
+## 0. Retell AI Documentation & API Quick Links
+
+### Documentation
+| Resource | URL |
+|----------|-----|
+| **Docs Home** | https://docs.retellai.com |
+| **Full Page Index** | https://docs.retellai.com/llms.txt |
+| **API Reference** | https://docs.retellai.com/api-references/create-phone-call |
+| **Quickstart** | https://docs.retellai.com/get-started/quick-start |
+| **SDKs (Node.js & Python)** | https://docs.retellai.com/get-started/sdks |
+| **Changelog** | https://www.retellai.com/changelog |
+| **Status Page** | https://status.retellai.com |
+| **Pricing** | https://www.retellai.com/pricing |
+
+### Building Agents
+| Resource | URL |
+|----------|-----|
+| Conversation Flow Overview | https://docs.retellai.com/build/conversation-flow/overview |
+| Node Overview | https://docs.retellai.com/build/conversation-flow/node |
+| Conversation Node | https://docs.retellai.com/build/conversation-flow/conversation-node |
+| Custom Function Node | https://docs.retellai.com/build/conversation-flow/custom-function |
+| Function Node Overview | https://docs.retellai.com/build/conversation-flow/function-node |
+| Logic Split / Branch Node | https://docs.retellai.com/build/conversation-flow/logic-split |
+| Components (Reusable Sub-flows) | https://docs.retellai.com/build/conversation-flow/components |
+| Flex Mode | https://docs.retellai.com/build/conversation-flow/flex-mode |
+| Global Node | https://docs.retellai.com/build/conversation-flow/global-setting |
+| Debug Guide | https://docs.retellai.com/build/conversation-flow/debug-guide |
+| Transition Conditions | https://docs.retellai.com/build/conversation-flow/transition-conditions |
+| Finetune Examples | https://docs.retellai.com/build/conversation-flow/finetune-examples |
+| MCP Node | https://docs.retellai.com/build/conversation-flow/mcp |
+| SMS Node | https://docs.retellai.com/build/conversation-flow/sms |
+| Press Digit Node | https://docs.retellai.com/build/conversation-flow/press-digit |
+| Agent Transfer Node | https://docs.retellai.com/build/conversation-flow/agent-transfer |
+| Call Transfer Node | https://docs.retellai.com/build/conversation-flow/call-transfer |
+| Extract Dynamic Variable Node | https://docs.retellai.com/build/conversation-flow/extract-dynamic-variable |
+| End Node | https://docs.retellai.com/build/conversation-flow/end-node |
+| Dynamic Variables | https://docs.retellai.com/build/dynamic-variables |
+| Knowledge Base | https://docs.retellai.com/build/knowledge-base |
+| Prompt Engineering Guide | https://docs.retellai.com/build/prompt-engineering-guide |
+| Single/Multi Prompt Overview | https://docs.retellai.com/build/single-multi-prompt/prompt-overview |
+| Chat Agent | https://docs.retellai.com/build/create-chat-agent |
+
+### Testing
+| Resource | URL |
+|----------|-----|
+| Testing Overview | https://docs.retellai.com/test/testing-overview |
+| Simulation Testing | https://docs.retellai.com/test/llm-simulation-testing |
+| Batch Test Simulation | https://docs.retellai.com/test/batch-test-simulation |
+| LLM Playground | https://docs.retellai.com/test/llm-playground |
+| Playground Debug | https://docs.retellai.com/test/llm-playground-debug |
+| Phone Call Testing | https://docs.retellai.com/test/phone-call-testing |
+| Web Call Testing | https://docs.retellai.com/test/web-call-testing |
+
+### Deploy & Telephony
+| Resource | URL |
+|----------|-----|
+| Outbound Calls | https://docs.retellai.com/deploy/outbound-call |
+| Receive Calls | https://docs.retellai.com/deploy/receive-calls |
+| Web Call (Frontend SDK) | https://docs.retellai.com/deploy/web-call |
+| Batch Calls | https://docs.retellai.com/deploy/batch-calls |
+| Custom Telephony | https://docs.retellai.com/deploy/custom-telephony |
+| International Calling | https://docs.retellai.com/deploy/international-calling |
+| Twilio SIP Trunking | https://docs.retellai.com/deploy/twilio |
+| Telnyx SIP Trunking | https://docs.retellai.com/deploy/telnyx |
+| Vonage SIP Trunking | https://docs.retellai.com/deploy/vonage |
+| Amazon Connect | https://docs.retellai.com/deploy/amazon-connect |
+| Five9 | https://docs.retellai.com/deploy/five9 |
+| Genesys | https://docs.retellai.com/deploy/genesys |
+| Website Widget | https://docs.retellai.com/deploy/website-widget |
+| SMS Send/Receive | https://docs.retellai.com/deploy/sms |
+
+### Features
+| Resource | URL |
+|----------|-----|
+| Webhook Overview | https://docs.retellai.com/features/webhook-overview |
+| Webhook Registration | https://docs.retellai.com/features/webhook-registration |
+| Webhook Security | https://docs.retellai.com/features/webhook-security |
+| Post-Call Analysis Overview | https://docs.retellai.com/features/post-call-analysis-overview |
+| Post-Call Analysis Creation | https://docs.retellai.com/features/post-call-analysis-creation |
+| Analytics Dashboard | https://docs.retellai.com/features/analytics-dashboard |
+| Session History | https://docs.retellai.com/features/session-history |
+| Alerting | https://docs.retellai.com/features/alerting |
+| AI Quality Assurance | https://docs.retellai.com/features/ai-quality-assurance |
+
+### Integrations
+| Resource | URL |
+|----------|-----|
+| HubSpot Native | https://docs.retellai.com/integrations/hubspot |
+
+### Reliability & Troubleshooting
+| Resource | URL |
+|----------|-----|
+| Reliability Overview | https://docs.retellai.com/reliability/reliability-overview |
+| Call Disconnection | https://docs.retellai.com/reliability/call-disconnection |
+| High Latency | https://docs.retellai.com/reliability/high-latency |
+| Wrong Response | https://docs.retellai.com/reliability/wrong-response |
+| Transcription Accuracy | https://docs.retellai.com/reliability/transcription-accuracy |
+| Fraud Protection | https://docs.retellai.com/reliability/fraud-protection |
+
+### Complete API Endpoint Reference
+| Category | Method | Endpoint | URL Base: `https://api.retellai.com` |
+|----------|--------|----------|---------------------------------------|
+| **Call (V2)** | POST | `/v2/create-phone-call` | Create outbound phone call |
+| | POST | `/v2/create-web-call` | Create browser-based call |
+| | GET | `/v2/get-call/{call_id}` | Get call details |
+| | POST | `/v2/list-calls` | List/filter calls |
+| | PATCH | `/v2/update-call/{call_id}` | Update call metadata |
+| | DELETE | `/v2/delete-call/{call_id}` | Delete call record |
+| **Chat** | POST | `/create-chat` | Create chat session |
+| | POST | `/create-outbound-sms` | Send outbound SMS |
+| | GET | `/get-chat/{chat_id}` | Get chat details |
+| | POST | `/create-chat-completion` | Chat completion |
+| | GET | `/list-chat` | List chat sessions |
+| | PATCH | `/update-chat/{chat_id}` | Update chat |
+| | PATCH | `/end-chat/{chat_id}` | End chat session |
+| **Phone Number** | POST | `/create-phone-number` | Purchase phone number |
+| | GET | `/get-phone-number/{phone_number}` | Get number details |
+| | GET | `/list-phone-numbers` | List all numbers |
+| | PATCH | `/update-phone-number/{phone_number}` | Update number config |
+| | DELETE | `/delete-phone-number/{phone_number}` | Delete number |
+| **Voice Agent** | POST | `/create-agent` | Create voice agent |
+| | GET | `/get-agent/{agent_id}` | Get agent details |
+| | GET | `/list-agents` | List all agents |
+| | PATCH | `/update-agent/{agent_id}` | Update agent |
+| | DELETE | `/delete-agent/{agent_id}` | Delete agent |
+| | POST | `/publish-agent/{agent_id}` | Publish agent version |
+| | GET | `/get-agent-versions/{agent_id}` | Get version history |
+| **Chat Agent** | POST | `/create-chat-agent` | Create chat agent |
+| | GET | `/get-chat-agent/{agent_id}` | Get chat agent |
+| | GET | `/list-chat-agents` | List chat agents |
+| | PATCH | `/update-chat-agent/{agent_id}` | Update chat agent |
+| | DELETE | `/delete-chat-agent/{agent_id}` | Delete chat agent |
+| | POST | `/publish-chat-agent/{agent_id}` | Publish chat agent |
+| | GET | `/get-chat-agent-versions/{agent_id}` | Get chat agent versions |
+| **Retell LLM** | POST | `/create-retell-llm` | Create LLM config |
+| | GET | `/get-retell-llm/{llm_id}` | Get LLM details |
+| | GET | `/list-retell-llms` | List all LLMs |
+| | PATCH | `/update-retell-llm/{llm_id}` | Update LLM |
+| | DELETE | `/delete-retell-llm/{llm_id}` | Delete LLM |
+| **Conversation Flow** | POST | `/create-conversation-flow` | Create flow |
+| | GET | `/get-conversation-flow/{id}` | Get flow |
+| | GET | `/list-conversation-flows` | List flows |
+| | PATCH | `/update-conversation-flow/{id}` | Update flow |
+| | DELETE | `/delete-conversation-flow/{id}` | Delete flow |
+| **Flow Components** | POST | `/create-conversation-flow-component` | Create component |
+| | GET | `/get-conversation-flow-component/{id}` | Get component |
+| | GET | `/list-conversation-flow-components` | List components |
+| | PATCH | `/update-conversation-flow-component/{id}` | Update component |
+| | DELETE | `/delete-conversation-flow-component/{id}` | Delete component |
+| **MCP Tool** | GET | `/get-mcp-tools/{agent_id}?mcp_id=xxx` | Get MCP tool definitions |
+| **Knowledge Base** | POST | `/create-knowledge-base` | Create KB (name, texts, files, URLs) |
+| | GET | `/get-knowledge-base/{id}` | Get KB details |
+| | GET | `/list-knowledge-bases` | List all KBs |
+| | DELETE | `/delete-knowledge-base/{id}` | Delete KB |
+| | POST | `/add-knowledge-base-sources/{id}` | Add sources to KB |
+| | DELETE | `/delete-knowledge-base-source/{id}` | Remove KB source |
+| **Voice** | POST | `/add-voice` | Add custom voice |
+| | POST | `/clone-voice` | Clone a voice |
+| | POST | `/search-voice` | Search voices |
+| | GET | `/get-voice/{voice_id}` | Get voice details |
+| | GET | `/list-voices` | List all voices |
+| **Batch Call** | POST | `/create-batch-call` | Bulk outbound calls |
+| **Testing** | POST | `/create-test-case-definition` | Create test case |
+| | GET | `/get-test-case-definition/{id}` | Get test case |
+| | GET | `/list-test-case-definitions` | List test cases |
+| | PUT | `/update-test-case-definition/{id}` | Update test case |
+| | DELETE | `/delete-test-case-definition/{id}` | Delete test case |
+| | POST | `/create-batch-test` | Run batch test |
+| | GET | `/get-batch-test/{id}` | Get batch test status |
+| | GET | `/list-batch-tests` | List batch tests |
+| | GET | `/get-test-run/{id}` | Get individual test run |
+| | GET | `/list-test-runs/{batch_id}` | List runs in batch |
+| **Account** | GET | `/get-concurrency` | Get concurrency limits |
+| **Custom Telephony** | POST | `/import-phone-number` | Import SIP number |
+| | POST | `/register-phone-call` | Register custom call |
+
+---
+
 ## 1. Environment Setup
 
 ### Workspace
@@ -89,7 +267,7 @@ These work through Claude Code's MCP integration:
 | `update_retell_llm` | Update LLM config |
 | `delete_retell_llm` | Delete an LLM |
 
-**LIMITATION:** The MCP server has ZERO conversation flow tools. It cannot create, read, update, or delete conversation flows. It can only create `retell-llm` type agents, not `conversation-flow` type agents.
+**LIMITATION:** The MCP server has ZERO conversation flow tools. It cannot create, read, update, or delete conversation flows. It can only create `retell-llm` type agents, not `conversation-flow` type agents. It also has NO testing/simulation tools, NO chat agent tools, NO knowledge base tools, NO voice cloning tools, NO batch call tools, and NO conversation flow component tools. All of these must be accessed via direct REST API calls (curl).
 
 ### Direct REST API (via curl, NOT in MCP)
 These must be called directly with curl:
@@ -1667,7 +1845,316 @@ The `call` object in every request includes:
 
 ---
 
-### 10.22 Native Integrations: HubSpot
+### 10.22 Simulation Testing & Batch Test API
+
+Retell provides a full programmatic testing API for running simulated conversations against agents without voice calls.
+
+#### Test Architecture
+
+```
+Create Test Case Definitions → Create Batch Test → Poll Test Runs → Get Results
+         (reusable)              (runs all cases)    (pass/fail/error)   (transcripts + explanations)
+```
+
+#### Test Case Definition Schema
+
+**Endpoint:** `POST https://api.retellai.com/create-test-case-definition`
+
+```json
+{
+  "name": "Test Case Name",
+  "response_engine": {
+    "type": "conversation-flow",
+    "conversation_flow_id": "conversation_flow_xxxxx"
+  },
+  "user_prompt": "Act as [persona]. You want [goal]. [behavioral instructions].",
+  "metrics": [
+    "Did the agent do X?",
+    "Did the agent NOT do Y?",
+    "Was Z handled correctly?"
+  ],
+  "dynamic_variables": {
+    "customer_name": "Test User"
+  },
+  "tool_mocks": [
+    {
+      "tool_name": "tool-gcal-check",
+      "input_match_rule": { "type": "any" },
+      "output": "{\"available_slots\": [\"Tuesday 9:00 AM\", \"Wednesday 2:00 PM\"]}"
+    }
+  ],
+  "llm_model": "gpt-4.1-mini"
+}
+```
+
+**Key fields:**
+- `response_engine` — supports both `retell-llm` (with `llm_id`) and `conversation-flow` (with `conversation_flow_id`)
+- `user_prompt` — describes a simulated caller persona with goals and behavior instructions
+- `metrics` — array of yes/no questions evaluated against the conversation transcript
+- `tool_mocks` — mock responses for function nodes so webhooks don't need to be live
+- `llm_model` — model used to simulate the user (gpt-4.1, gpt-5, claude-4.5-sonnet, gemini-2.5-flash, etc.)
+- `dynamic_variables` — inject test values into `{{variables}}`
+
+**Response:** Returns `test_case_definition_id` for use in batch tests.
+
+#### Batch Test Schema
+
+**Endpoint:** `POST https://api.retellai.com/create-batch-test`
+
+```json
+{
+  "test_case_definition_ids": ["test_case_xxx", "test_case_yyy"],
+  "response_engine": {
+    "type": "conversation-flow",
+    "conversation_flow_id": "conversation_flow_xxxxx"
+  }
+}
+```
+
+**Response:**
+```json
+{
+  "test_case_batch_job_id": "test_batch_xxxxx",
+  "status": "in_progress",
+  "pass_count": 0,
+  "fail_count": 0,
+  "error_count": 0,
+  "total_count": 10
+}
+```
+
+Max 200 test cases per batch.
+
+#### Test Run Results
+
+**Endpoint:** `GET https://api.retellai.com/list-test-runs/{test_case_batch_job_id}`
+
+Returns array of `TestCaseJob` objects:
+```json
+{
+  "test_case_job_id": "xxx",
+  "status": "pass",
+  "test_case_definition_id": "test_case_xxx",
+  "test_case_definition_snapshot": { "name": "...", "metrics": [...] },
+  "transcript_snapshot": { ... },
+  "result_explanation": "Detailed explanation of pass/fail for each metric"
+}
+```
+
+Status values: `in_progress`, `pass`, `fail`, `error`
+
+#### Common Error Results
+
+| Error | Cause | Fix |
+|-------|-------|-----|
+| "Transfer destination number is not a valid e.164 number" | Placeholder phone number in transfer node | Set a real E.164 number (e.g., `+12137774444`) |
+| "Ending the conversation early as there might be a loop" | Agent stuck cycling between nodes | Tighten edge conditions, add exit paths |
+| Tool mock not firing | `tool_name` in mock doesn't match `tool_id` in flow | Verify exact tool name match |
+
+#### Test Case Design Patterns
+
+**Happy path test:**
+```
+user_prompt: "Act as [cooperative persona]. Provide all info requested. Goal: [complete the flow]."
+metrics: Check each step was hit in order.
+```
+
+**Rejection path test:**
+```
+user_prompt: "Act as [unwanted caller type]. Be persistent. Goal: [get past the guard]."
+metrics: Verify agent blocks correctly and doesn't leak into booking flow.
+```
+
+**Edge case test:**
+```
+user_prompt: "Act as [persona with unusual input]. [Specific instructions to trigger edge case]."
+metrics: Verify graceful handling.
+```
+
+**Frustration test:**
+```
+user_prompt: "Act as [impatient caller]. Demand a human. Escalate if not transferred."
+metrics: Verify global transfer node fires.
+```
+
+#### GreenScape Agent Test Cases (deployed)
+
+10 test cases created via API for `conversation_flow_f5405d6f0eba`:
+
+| ID | Name | Path Tested |
+|----|------|-------------|
+| `test_case_e391c4c8938d` | New Customer - Lawn Mowing Booking | Full happy path with GCal mocks |
+| `test_case_1234641bcbdf` | New Customer - Landscaping Design | Happy path, different service |
+| `test_case_53622ec9c601` | Vendor Rejection - Sales Call | Chopping block path |
+| `test_case_47ee637b8e9b` | Existing Customer - Service Question | Existing customer routing |
+| `test_case_2a55f420526f` | Emergency Service Request | Emergency/urgent handling |
+| `test_case_082228c4cd7b` | Frustrated Caller - Wants Human | Global transfer trigger |
+| `test_case_e1f7e367c924` | Out of Service Area | Geographic rejection |
+| `test_case_4cc0c2706480` | FAQ - Pricing Question | Info without booking |
+| `test_case_506a483701c3` | Name Spelling Correction | Siobhan O'Malley spelling flow |
+| `test_case_30945ef1d2e2` | Email Spelling Correction | protonmail.com domain correction |
+
+**Batch test result** (`test_batch_d9a7a340acdf`):
+- 3 PASS: Lawn Mowing Booking, Out of Service Area, Name Spelling Correction
+- 4 ERROR (placeholder transfer number `+10000000000`): Vendor Rejection, Emergency, Frustrated Caller, Existing Customer
+- 3 ERROR (loop detection): Landscaping Design, Email Spelling, FAQ Pricing
+
+#### Testing Workflow (for new agents)
+
+```bash
+# 1. Create test case definitions
+curl -s -X POST https://api.retellai.com/create-test-case-definition \
+  -H "Authorization: Bearer $KEY" \
+  -H "Content-Type: application/json" \
+  -d @test-case.json
+
+# 2. Run batch test
+curl -s -X POST https://api.retellai.com/create-batch-test \
+  -H "Authorization: Bearer $KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"test_case_definition_ids": ["id1","id2"], "response_engine": {"type":"conversation-flow","conversation_flow_id":"xxx"}}'
+
+# 3. Poll results
+curl -s https://api.retellai.com/list-test-runs/$BATCH_ID \
+  -H "Authorization: Bearer $KEY" | jq '[.[] | {name: .test_case_definition_snapshot.name, status, explanation: .result_explanation}]'
+```
+
+#### Dashboard Testing (manual)
+
+In addition to the API, Retell dashboard offers:
+- **Test Call** — browser-based voice call to your agent (no phone needed)
+- **AI Simulated Chat** — text-based simulation with persona prompts
+- **LLM Playground** — test individual node prompts in isolation
+- **Playground Debug** — see which nodes the agent visits and why transitions fire
+
+#### Test Case Management API
+
+| Method | Endpoint | Purpose |
+|--------|----------|---------|
+| POST | `/create-test-case-definition` | Create reusable test case |
+| GET | `/get-test-case-definition/{id}` | Get test case details |
+| GET | `/list-test-case-definitions` | List all test cases |
+| PUT | `/update-test-case-definition/{id}` | Update test case |
+| DELETE | `/delete-test-case-definition/{id}` | Delete test case |
+| POST | `/create-batch-test` | Run batch of test cases |
+| GET | `/get-batch-test/{id}` | Get batch status/counts |
+| GET | `/list-batch-tests` | List all batch tests |
+| GET | `/get-test-run/{id}` | Get individual run result |
+| GET | `/list-test-runs/{batch_id}` | List all runs in batch |
+
+---
+
+### 10.23 Chat Agents & SMS
+
+Retell supports **chat agents** (text-based, not voice) and **SMS messaging** in addition to voice agents.
+
+#### Chat Agent API
+
+| Method | Endpoint | Purpose |
+|--------|----------|---------|
+| POST | `/create-chat-agent` | Create chat agent |
+| GET | `/get-chat-agent/{id}` | Get details |
+| GET | `/list-chat-agents` | List all |
+| PATCH | `/update-chat-agent/{id}` | Update |
+| DELETE | `/delete-chat-agent/{id}` | Delete |
+| POST | `/publish-chat-agent/{id}` | Publish version |
+| GET | `/get-chat-agent-versions/{id}` | Version history |
+
+#### Chat Session API
+
+- `POST /create-chat` — start chat session (requires `agent_id` of a chat agent)
+- `POST /create-chat-completion` — send message and get response
+- `GET /get-chat/{id}` — get chat details with transcript
+- `PATCH /end-chat/{id}` — end session
+- Response includes: `transcript`, `message_with_tool_calls`, `chat_analysis`, `chat_cost`, `collected_dynamic_variables`
+
+#### SMS
+
+- `POST /create-outbound-sms` — send SMS from a Retell number
+- SMS nodes in conversation flows send messages mid-call
+- Two-way SMS available for chat agents
+
+#### Website Widget
+
+Retell provides an embeddable chat widget for websites. See: https://docs.retellai.com/deploy/website-widget
+
+---
+
+### 10.24 Additional API Details
+
+#### Phone Call API (V2)
+
+**Create Phone Call** — `POST /v2/create-phone-call`
+- Required: `from_number` (E.164, must be Retell-owned), `to_number` (E.164)
+- Optional: `override_agent_id`, `agent_override` (customize agent per-call), `metadata`, `retell_llm_dynamic_variables`, `custom_sip_headers`, `ignore_e164_validation` (custom telephony only)
+- Response: `call_id`, `call_status` (registered → ongoing → ended), `agent_id`, `direction`
+
+**Create Web Call** — `POST /v2/create-web-call`
+- Required: `agent_id`
+- Optional: `agent_version`, `agent_override`, `metadata`, `retell_llm_dynamic_variables`
+- Response: `access_token` (for frontend SDK), `call_id`, `call_status`
+
+#### Batch Call API
+
+**Create Batch Call** — `POST /create-batch-call`
+- Required: `from_number`, `tasks[]` (array of `{to_number, ...}`)
+- Optional: `name`, `trigger_timestamp` (schedule for later), `reserved_concurrency`, `call_time_window` (restrict calling hours by timezone)
+- Each task can have `override_agent_id`, `retell_llm_dynamic_variables`, `metadata`
+
+#### Knowledge Base API
+
+**Create Knowledge Base** — `POST /create-knowledge-base`
+- Required: `knowledge_base_name` (max 40 chars)
+- Optional: `knowledge_base_texts[]` ({title, text}), `knowledge_base_files[]` (binary, max 25 files, 50MB each), `knowledge_base_urls[]`, `enable_auto_refresh` (URLs refreshed every 12 hours)
+- Status: `in_progress` → `complete` | `error`
+
+#### Conversation Flow Component API
+
+**Create Component** — `POST /create-conversation-flow-component`
+- Required: `name`, `nodes[]`
+- Optional: `tools[]`, `mcps[]`, `start_node_id`
+- Response includes: `conversation_flow_component_id`, `linked_conversation_flow_ids[]`
+
+#### MCP Tools API
+
+**Get MCP Tools** — `GET /get-mcp-tools/{agent_id}?mcp_id=xxx`
+- Optional: `version` (agent version), `component_id`
+- Response: array of `{name, description, inputSchema}` for each tool the MCP server exposes
+
+#### Account API
+
+**Get Concurrency** — `GET /get-concurrency`
+- Response: `current_concurrency`, `concurrency_limit`, `base_concurrency`, `purchased_concurrency`, `concurrency_burst_enabled`, `concurrency_burst_limit`
+- Burst mode: min(3x normal limit, normal + 300)
+
+#### Custom Telephony
+
+**Import Phone Number** — `POST /import-phone-number`
+- Required: `phone_number` (E.164), `termination_uri` (SIP trunk)
+- Optional: `sip_trunk_auth_username/password`, `inbound_agent_id`, `outbound_agent_id`, `nickname`, `transport` (TLS/TCP/UDP)
+
+**Register Phone Call** — `POST /register-phone-call`
+- Used for custom telephony to register inbound calls with Retell
+
+#### Voice API
+
+| Method | Endpoint | Purpose |
+|--------|----------|---------|
+| POST | `/add-voice` | Add custom voice |
+| POST | `/clone-voice` | Clone a voice from audio |
+| POST | `/search-voice` | Search voices by criteria |
+| GET | `/get-voice/{id}` | Get voice details |
+| GET | `/list-voices` | List all voices |
+
+#### Agent Versioning
+
+- `POST /publish-agent/{agent_id}` — snapshot current config as a version
+- `GET /get-agent-versions/{agent_id}` — list all versions
+- Calls can target specific versions via `override_agent_version` or `agent_version`
+
+---
+
+### 10.25 Native Integrations: HubSpot
 
 Retell has an **official native HubSpot integration** — no custom middleware required.
 
@@ -1720,7 +2207,7 @@ For outbound campaign-style calls triggered by CRM events, use the native integr
 
 ---
 
-### 10.23 Session Log Update
+### 10.26 Session Log Update
 
 ### 2026-02-02 (continued): Node Testing, PATCH Behavior, Custom Tool Research
 
@@ -1730,4 +2217,16 @@ For outbound campaign-style calls triggered by CRM events, use the native integr
 - Confirmed PATCH behavior: partial updates for scalar fields, full replacement for `nodes[]` array
 - Documented complete custom tool/webhook integration patterns for any calendar, CRM, or external API
 - Cleaned up test flows (deleted `conversation_flow_36d439718146` and `conversation_flow_f5f09d8aa338`)
-- Researched and documented HubSpot native integration with Retell (section 10.22): outbound calls triggered by HubSpot workflows, call results branch back into HubSpot, auto-sync of recordings/transcripts/analysis to contact records
+- Researched and documented HubSpot native integration with Retell (section 10.25): outbound calls triggered by HubSpot workflows, call results branch back into HubSpot, auto-sync of recordings/transcripts/analysis to contact records
+
+### 2026-02-02 (continued): Simulation Testing & Full API Documentation
+- Discovered Retell has programmatic Simulation Testing API (`/create-test-case-definition`, `/create-batch-test`, `/list-test-runs`)
+- Created 10 test case definitions for GreenScape agent via direct API calls
+- Ran batch test (`test_batch_d9a7a340acdf`): 3 pass, 4 error (placeholder transfer number), 3 error (loop detection)
+- Tool mocks work — GCal check/book mocks fired correctly in passing tests
+- Comprehensive scrape of Retell API: documented all endpoints across 16 categories (Call V2, Chat, Phone Number, Voice Agent, Chat Agent, Retell LLM, Conversation Flow, Flow Components, MCP Tool, Knowledge Base, Voice, Batch Call, Testing, Account, Custom Telephony, Batch Tests)
+- Added Section 0: full documentation links and API endpoint reference table
+- Added Section 10.22: Simulation Testing & Batch Test API (schemas, workflows, test case design patterns, GreenScape test results)
+- Added Section 10.23: Chat Agents & SMS API
+- Added Section 10.24: Additional API Details (Phone Call V2, Batch Call, Knowledge Base, Components, MCP Tools, Account/Concurrency, Custom Telephony, Voice, Agent Versioning)
+- Updated MCP server limitation note to include all missing tool categories

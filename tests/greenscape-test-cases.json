@@ -1,0 +1,112 @@
+{
+  "test_cases": [
+    {
+      "name": "New Customer - Lawn Mowing Booking",
+      "user_prompt": "Act as a new customer named Sarah Johnson. You want to schedule weekly lawn mowing for your home. Your email is sarah.johnson@email.com. You prefer mornings, ideally next Tuesday. You live in the service area. Be friendly and cooperative.",
+      "metrics": [
+        "Did the agent correctly identify the caller as a new customer?",
+        "Did the agent collect the service type (lawn mowing)?",
+        "Did the agent collect the caller's location?",
+        "Did the agent ask about timeline/urgency?",
+        "Did the agent collect the full name and confirm spelling?",
+        "Did the agent collect the email and confirm spelling?",
+        "Did the agent ask about preferred appointment time?",
+        "Did the agent attempt to check calendar availability?",
+        "Did the agent confirm a booking or offer alternatives?"
+      ]
+    },
+    {
+      "name": "New Customer - Landscaping Design",
+      "user_prompt": "Act as a new customer named Mike Chen. You want a full backyard landscaping redesign including a patio and garden beds. Your email is mike.chen@gmail.com. You are flexible on timing but want it done before summer. You live in the service area.",
+      "metrics": [
+        "Did the agent correctly identify the caller as a new customer?",
+        "Did the agent collect the service type (landscaping design)?",
+        "Did the agent collect the caller's location?",
+        "Did the agent ask about timeline?",
+        "Did the agent collect name and confirm spelling?",
+        "Did the agent collect email and confirm spelling?",
+        "Did the agent attempt to schedule an appointment?"
+      ]
+    },
+    {
+      "name": "Vendor Rejection - Sales Call",
+      "user_prompt": "Act as a sales rep from a fertilizer supply company called GreenSupply Co. You want to speak to the owner or purchasing manager about a bulk discount on fertilizer products. Be persistent but professional. If rejected, try once more before giving up.",
+      "metrics": [
+        "Did the agent correctly identify the caller as a vendor or solicitor?",
+        "Did the agent politely decline the sales pitch?",
+        "Did the agent NOT offer to schedule an appointment?",
+        "Did the agent NOT transfer the call to a human?",
+        "When the vendor persisted, did the agent firmly end the conversation?",
+        "Did the agent remain professional throughout?"
+      ]
+    },
+    {
+      "name": "Existing Customer - Service Question",
+      "user_prompt": "Act as an existing customer named David Park. You already have a monthly lawn care plan. You want to know when your next scheduled visit is and whether you can add hedge trimming to your plan.",
+      "metrics": [
+        "Did the agent correctly identify the caller as an existing customer?",
+        "Did the agent route appropriately for existing customer inquiries?",
+        "Did the agent NOT restart the new customer qualification flow?"
+      ]
+    },
+    {
+      "name": "Emergency Service Request",
+      "user_prompt": "Act as a homeowner named Lisa Brown. A large tree branch fell on your fence during last night's storm and is blocking your driveway. You need emergency tree removal as soon as possible. Be urgent but polite.",
+      "metrics": [
+        "Did the agent recognize the urgency of the request?",
+        "Did the agent handle the emergency appropriately?",
+        "Did the agent prioritize getting help quickly over standard qualification?"
+      ]
+    },
+    {
+      "name": "Frustrated Caller - Wants Human",
+      "user_prompt": "Act as an impatient caller named Tom Wilson. You don't want to talk to a robot. After the greeting, immediately say you want to speak to a real person. If the agent tries to help, get more frustrated and insist on a transfer.",
+      "metrics": [
+        "Did the agent acknowledge the caller's frustration?",
+        "Did the agent offer to transfer to a human?",
+        "Did the agent NOT force the caller through the full qualification flow?",
+        "Was the global transfer node triggered?"
+      ]
+    },
+    {
+      "name": "Out of Service Area",
+      "user_prompt": "Act as a new customer named Alex Rivera. You want lawn mowing service but you live in a city that is far outside the service area. Your address is in Miami, Florida. Be cooperative.",
+      "metrics": [
+        "Did the agent collect the location?",
+        "Did the agent recognize the location is outside the service area?",
+        "Did the agent politely decline or offer alternatives?",
+        "Did the agent NOT attempt to book an appointment?"
+      ]
+    },
+    {
+      "name": "FAQ - Pricing Question",
+      "user_prompt": "Act as a potential customer named Jenny Kim. You want to know how much lawn mowing costs before you commit to anything. Ask about pricing, minimum lot sizes, and whether they offer free estimates. Don't commit to booking yet.",
+      "metrics": [
+        "Did the agent provide helpful information about services?",
+        "Did the agent handle pricing questions appropriately?",
+        "Did the agent offer to schedule a free estimate or consultation?",
+        "Did the agent NOT pressure the caller into booking?"
+      ]
+    },
+    {
+      "name": "Name Spelling Correction",
+      "user_prompt": "Act as a new customer named Siobhan O'Malley. When the agent tries to confirm your name spelling, correct them - it's S-I-O-B-H-A-N, not how it sounds. Your email is siobhan@email.com. You want tree trimming service.",
+      "metrics": [
+        "Did the agent attempt to spell back the name?",
+        "Did the agent accept the spelling correction?",
+        "Did the agent confirm the corrected spelling?",
+        "Did the agent proceed with booking after confirmation?"
+      ]
+    },
+    {
+      "name": "Email Spelling Correction",
+      "user_prompt": "Act as a new customer named Bob Smith. Your email is bob.smith@protonmail.com. When the agent spells it back, they will likely miss the 'protonmail' domain - correct them. You want hedge trimming service next week.",
+      "metrics": [
+        "Did the agent attempt to spell back the email?",
+        "Did the agent accept the email correction?",
+        "Did the agent confirm the corrected email?",
+        "Did the agent proceed with booking after confirmation?"
+      ]
+    }
+  ]
+}
